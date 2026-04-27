@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 @AllArgsConstructor
 @Slf4j
 public class WebhookController {
-    public final ChatBotService chatBotService;
+    private final ChatBotService chatBotService;
 
     @PostMapping
     public BotResponse receiveMessage(@Valid @RequestBody UserMessageRequest request){
