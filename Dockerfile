@@ -1,5 +1,5 @@
-
-FROM maven:3.9.9-eclipse-temurin-17 AS build
+# Step 1: Build with Java 21
+FROM maven:3.9.9-eclipse-temurin-21 AS build
 
 WORKDIR /app
 
@@ -8,8 +8,8 @@ COPY src ./src
 
 RUN mvn clean package -DskipTests
 
-# Step 2: Run app
-FROM eclipse-temurin:17-jre-alpine
+# Step 2: Run with Java 21
+FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /app
 
