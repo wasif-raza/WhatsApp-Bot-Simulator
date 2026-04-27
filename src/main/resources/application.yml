@@ -1,3 +1,4 @@
+# configure port
 server:
   port: ${PORT:8080}
 
