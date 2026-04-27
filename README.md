@@ -148,6 +148,16 @@ logging:
 ```
 
 ---
+
+### Screenshots
+
+![Test 1](assets/Screenshot.png)
+
+![Test 2](assets/Screenshot2.png)
+
+![Test 3](assets/Screenshot3.png)
+
+
 ##  Conclusion
 
 This project demonstrates a clean and scalable Spring Boot chatbot using:
